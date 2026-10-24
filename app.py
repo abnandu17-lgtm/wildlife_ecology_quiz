@@ -4,353 +4,459 @@ from pathlib import Path
 
 import streamlit as st
 
-# Page configuration
+
+# --------------------------------------------------
+# PAGE SETTINGS
+# --------------------------------------------------
+
 st.set_page_config(
     page_title="Wildlife Ecology Quiz",
     layout="centered",
     initial_sidebar_state="collapsed",
 )
 
-# Load questions
-file_path = Path(__file__).parent / "questions.json"
 
-with open(file_path, "r", encoding="utf-8") as file:
-    all_questions = json.load(file)
+# --------------------------------------------------
+# SIMPLE DARK UI
+# --------------------------------------------------
 
-# Simple styling
-st.markdown("""
-<style>
-.stApp {
-    background-color: #171717;
-    color: #eeeeee;
-}
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #171717;
+        color: #eeeeee;
+    }
 
-.block-container {
-    max-width: 780px;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
+    h1, h2, h3, p, label {
+        color: #eeeeee !important;
+    }
 
-h1, h2, h3, p, label, li {
-    color: #eeeeee;
-}
+    div.stButton > button {
+        background-color: #303030;
+        color: #eeeeee;
+        border: 1px solid #555555;
+        border-radius: 5px;
+    }
 
-div[role="radiogroup"] {
-    gap: 8px;
-}
+    div.stButton > button:hover {
+        background-color: #414141;
+        color: #ffffff;
+        border-color: #777777;
+    }
 
-div[role="radiogroup"] label {
-    background-color: transparent;
-    border: none;
-    padding: 5px 0;
-    color: #eeeeee;
-}
+    div[data-baseweb="select"] > div {
+        background-color: #252525;
+        color: #eeeeee;
+    }
 
-.stButton > button {
-    background-color: #303030;
-    color: #eeeeee;
-    border: 1px solid #555555;
-    border-radius: 4px;
-    padding: 8px 16px;
-}
+    div[role="radiogroup"] label {
+        color: #eeeeee !important;
+    }
 
-.stButton > button:hover {
-    background-color: #414141;
-    color: #ffffff;
-    border-color: #777777;
-}
+    hr {
+        border-color: #444444;
+    }
 
-div[data-baseweb="select"] > div {
-    background-color: #252525;
-    color: #eeeeee;
-    border-color: #555555;
-}
-
-div[data-testid="stProgress"] > div {
-    background-color: #303030;
-}
-
-div[data-testid="stProgress"] > div > div {
-    background-color: #999999;
-}
-
-div[data-testid="stMetric"] {
-    background-color: transparent;
-    border: none;
-}
-
-div[data-testid="stAlert"] {
-    background-color: transparent;
-    border: none;
-}
-
-header[data-testid="stHeader"] {
-    background-color: #171717;
-}
-
-hr {
-    border-color: #444444;
-}
-
-footer {
-    visibility: hidden;
-}
-</style>
-""", unsafe_allow_html=True)
-
-# Page title
-st.title("Wildlife Ecology Quiz")
-
-st.write(
-    "Practice multiple-choice questions from the "
-    "12 weekly assignments."
+    #MainMenu, footer {
+        visibility: hidden;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
 
-# Select quiz mode
+
+# --------------------------------------------------
+# LOAD QUESTIONS
+# --------------------------------------------------
+
+file_path = Path(__file__).parent / "questions.json"
+
+try:
+    with open(file_path, "r", encoding="utf-8") as file:
+        all_questions = json.load(file)
+except FileNotFoundError:
+    st.error("questions.json was not found in the app folder.")
+    st.stop()
+except json.JSONDecodeError:
+    st.error("questions.json contains invalid JSON.")
+    st.stop()
+
+if not isinstance(all_questions, list) or not all_questions:
+    st.error("No questions were found in questions.json.")
+    st.stop()
+
+
+# --------------------------------------------------
+# SESSION STATE
+# --------------------------------------------------
+
+if "quiz_run_id" not in st.session_state:
+    st.session_state.quiz_run_id = 0
+
+if "question_orders" not in st.session_state:
+    st.session_state.question_orders = {}
+
+if "option_orders" not in st.session_state:
+    st.session_state.option_orders = {}
+
+
+# --------------------------------------------------
+# HEADER
+# --------------------------------------------------
+
+st.title("Wildlife Ecology Quiz")
+st.write("Practice questions and check your answers instantly.")
+
+
+# --------------------------------------------------
+# QUIZ MODE
+# --------------------------------------------------
+
 mode = st.radio(
     "Choose quiz mode",
     [
-        "Week-wise practice",
-        "Sequential quiz",
-        "Random quiz",
+        "Week-wise Practice",
+        "Sequential Quiz",
+        "Random Quiz",
     ],
+    horizontal=True,
 )
+
+
+# --------------------------------------------------
+# WEEK SELECTION
+# --------------------------------------------------
 
 selected_week = None
 
-if mode == "Week-wise practice":
+if mode == "Week-wise Practice":
+
+    available_weeks = sorted(
+        {
+            int(q["week"])
+            for q in all_questions
+            if "week" in q
+        }
+    )
+
+    if not available_weeks:
+        st.error("No week information was found in questions.json.")
+        st.stop()
+
     selected_week = st.selectbox(
         "Select week",
-        list(range(1, 13)),
-        format_func=lambda x: f"Week {x}",
+        available_weeks,
+        format_func=lambda week: f"Week {week}",
     )
 
-# Prepare quiz when settings change
-quiz_settings = f"{mode}-{selected_week}"
 
-if st.session_state.get("quiz_settings") != quiz_settings:
+# --------------------------------------------------
+# PREPARE BASE QUESTIONS
+# --------------------------------------------------
 
-    if mode == "Week-wise practice":
-        quiz_questions = [
-            q for q in all_questions
-            if q["week"] == selected_week
-        ]
-    else:
-        quiz_questions = list(all_questions)
+if mode == "Week-wise Practice":
 
-    if mode == "Random quiz":
-        random.shuffle(quiz_questions)
-
-    st.session_state["quiz_questions"] = quiz_questions
-    st.session_state["user_answers"] = {}
-    st.session_state["question_index"] = 0
-    st.session_state["quiz_finished"] = False
-    st.session_state["quiz_settings"] = quiz_settings
-
-questions = st.session_state["quiz_questions"]
-user_answers = st.session_state["user_answers"]
-total_questions = len(questions)
-question_index = st.session_state["question_index"]
-
-
-def get_option_text(question, label):
-    for option in question["options"]:
-        if option["label"] == label:
-            return option["text"]
-    return ""
-
-
-# Results page
-if st.session_state["quiz_finished"]:
-
-    st.header("Quiz Results")
-
-    score = sum(
-        1 for i, question in enumerate(questions)
-        if user_answers.get(i) == question["answer"]
-    )
-
-    incorrect = sum(
-        1 for i, question in enumerate(questions)
-        if i in user_answers
-        and user_answers[i] != question["answer"]
-    )
-
-    unanswered = total_questions - len(user_answers)
-
-    percentage = (
-        round(score * 100 / total_questions)
-        if total_questions else 0
-    )
-
-    st.progress(score / total_questions if total_questions else 0)
-
-    st.metric("Final score", f"{score} / {total_questions}")
-    st.write(f"Percentage: {percentage}%")
-    st.write(f"Incorrect answers: {incorrect}")
-    st.write(f"Unanswered questions: {unanswered}")
-
-    st.subheader("Review incorrect answers")
-
-    wrong_questions = [
-        (i, question)
-        for i, question in enumerate(questions)
-        if user_answers.get(i) != question["answer"]
+    base_questions = [
+        q for q in all_questions
+        if int(q.get("week", -1)) == selected_week
     ]
 
-    if wrong_questions:
-        for i, question in wrong_questions:
+elif mode == "Sequential Quiz":
 
-            with st.expander(
-                f"Week {question['week']} - "
-                f"Question {question['number']}"
-            ):
-                st.write(question["question"])
+    base_questions = sorted(
+        all_questions,
+        key=lambda q: (
+            int(q.get("week", 0)),
+            int(q.get("number", 0)),
+        ),
+    )
 
-                selected = user_answers.get(i)
-
-                if selected is None:
-                    st.write("Your answer: Not answered")
-                else:
-                    st.write(
-                        f"Your answer: {selected.upper()}. "
-                        f"{get_option_text(question, selected)}"
-                    )
-
-                correct = question["answer"]
-
-                st.write(
-                    f"Correct answer: {correct.upper()}. "
-                    f"{get_option_text(question, correct)}"
-                )
-    else:
-        st.write("All answers are correct.")
-
-    if st.button("Restart quiz", use_container_width=True):
-
-        keys_to_clear = [
-            "quiz_questions",
-            "user_answers",
-            "question_index",
-            "quiz_finished",
-            "quiz_settings",
-        ]
-
-        for key in keys_to_clear:
-            st.session_state.pop(key, None)
-
-        st.rerun()
-
-# Question page
 else:
+    base_questions = all_questions.copy()
 
-    question = questions[question_index]
 
-    st.progress(
-        (question_index + 1) / total_questions
-        if total_questions else 0
-    )
+if not base_questions:
+    st.warning("No questions are available for this selection.")
+    st.stop()
 
-    st.write(
-        f"Question {question_index + 1} "
-        f"of {total_questions}"
-    )
 
-    st.caption(
-        f"Week {question['week']} - "
-        f"Question {question['number']}"
-    )
+# --------------------------------------------------
+# SHUFFLE SETTINGS FOR EVERY SECTION
+# --------------------------------------------------
 
-    st.divider()
+st.markdown("### Quiz Settings")
 
-    st.subheader(question["question"])
+shuffle_questions = st.checkbox(
+    "Shuffle questions",
+    value=(mode == "Random Quiz"),
+    key=f"shuffle_questions_{mode}_{selected_week}",
+)
 
-    options = question["options"]
+shuffle_options = st.checkbox(
+    "Shuffle answer options",
+    value=False,
+    key=f"shuffle_options_{mode}_{selected_week}",
+)
 
-    option_labels = [
-        f"{option['label'].upper()}. {option['text']}"
-        for option in options
-    ]
 
-    option_lookup = {
-        f"{option['label'].upper()}. {option['text']}":
-        option["label"]
-        for option in options
+# --------------------------------------------------
+# CREATE A QUIZ SESSION
+# --------------------------------------------------
+
+section_key = f"{mode}_{selected_week}"
+
+settings = (
+    shuffle_questions,
+    shuffle_options,
+)
+
+current_signature = (
+    section_key,
+    settings,
+)
+
+if st.session_state.get("current_signature") != current_signature:
+
+    st.session_state.quiz_run_id += 1
+    run_id = st.session_state.quiz_run_id
+
+    # Prepare question order.
+    questions = base_questions.copy()
+
+    if shuffle_questions:
+        random.shuffle(questions)
+
+    st.session_state.question_orders[section_key] = {
+        "run_id": run_id,
+        "questions": questions,
     }
 
-    previous_answer = user_answers.get(question_index)
+    # Prepare a stable option order for each question.
+    option_orders = {}
 
-    # Show submitted answer and feedback
-    if previous_answer is not None:
+    for index, question in enumerate(questions):
+        options = question.get("options", []).copy()
 
-        previous_choice = next(
+        if shuffle_options:
+            random.shuffle(options)
+
+        option_orders[index] = options
+
+    st.session_state.option_orders[section_key] = {
+        "run_id": run_id,
+        "options": option_orders,
+    }
+
+    # Clear previous answers when settings change.
+    for key in list(st.session_state.keys()):
+        if key.startswith("answer_"):
+            del st.session_state[key]
+
+    st.session_state.current_signature = current_signature
+
+
+# Use saved orders so Streamlit reruns don't reshuffle questions.
+saved_question_data = st.session_state.question_orders[section_key]
+questions = saved_question_data["questions"]
+
+saved_option_data = st.session_state.option_orders[section_key]
+option_orders = saved_option_data["options"]
+
+run_id = saved_question_data["run_id"]
+
+
+# --------------------------------------------------
+# GENERATE A NEW ORDER BUTTON
+# --------------------------------------------------
+
+if st.button("Shuffle Again"):
+
+    st.session_state.current_signature = None
+
+    for key in list(st.session_state.keys()):
+        if key.startswith("answer_"):
+            del st.session_state[key]
+
+    st.rerun()
+
+
+# --------------------------------------------------
+# QUIZ INFORMATION
+# --------------------------------------------------
+
+st.markdown("---")
+st.write(f"Total questions: {len(questions)}")
+
+if mode == "Week-wise Practice":
+    st.subheader(f"Week {selected_week}")
+elif mode == "Random Quiz":
+    st.subheader("Random Quiz")
+
+st.write(
+    "Choose an option for each question. "
+    "Feedback appears immediately. Scroll down to continue."
+)
+
+
+# --------------------------------------------------
+# DISPLAY QUESTIONS WITH INSTANT FEEDBACK
+# --------------------------------------------------
+
+for i, question in enumerate(questions):
+
+    st.markdown("---")
+    st.markdown(f"**Question {i + 1}**")
+    st.write(question["question"])
+
+    original_options = question.get("options", [])
+
+    if not original_options:
+        st.warning("Options are missing for this question.")
+        continue
+
+    displayed_options = option_orders[i]
+
+    correct_answer = str(
+        question.get("answer", "")
+    ).strip().lower()
+
+    answer_key = f"answer_{run_id}_{i}"
+
+    selected_option = st.radio(
+        "Select your answer:",
+        displayed_options,
+        format_func=lambda option: (
+            f"{option['label']}. {option['text']}"
+        ),
+        key=answer_key,
+        index=None,
+        label_visibility="collapsed",
+    )
+
+    if selected_option is not None:
+
+        selected_label = str(
+            selected_option.get("label", "")
+        ).strip().lower()
+
+        if selected_label == correct_answer:
+            st.markdown("**Correct!**")
+
+        else:
+            st.markdown("**Incorrect.**")
+
+            correct_option = next(
+                (
+                    option for option in original_options
+                    if str(option.get("label", "")).strip().lower()
+                    == correct_answer
+                ),
+                None,
+            )
+
+            if correct_option:
+                st.write(
+                    f"Correct answer: {correct_option['label']}. "
+                    f"{correct_option['text']}"
+                )
+            else:
+                st.write(
+                    f"Correct answer: {question.get('answer', 'Not available')}"
+                )
+
+
+# --------------------------------------------------
+# FINAL RESULTS
+# --------------------------------------------------
+
+st.markdown("---")
+st.subheader("Quiz Results")
+
+score = 0
+answered = 0
+unanswered = 0
+incorrect_questions = []
+
+for i, question in enumerate(questions):
+
+    selected_option = st.session_state.get(
+        f"answer_{run_id}_{i}"
+    )
+
+    if selected_option is None:
+        unanswered += 1
+        continue
+
+    answered += 1
+
+    correct_answer = str(
+        question.get("answer", "")
+    ).strip().lower()
+
+    selected_label = str(
+        selected_option.get("label", "")
+    ).strip().lower()
+
+    if selected_label == correct_answer:
+        score += 1
+
+    else:
+
+        correct_option = next(
             (
-                label for label in option_labels
-                if option_lookup[label] == previous_answer
+                option for option in question.get("options", [])
+                if str(option.get("label", "")).strip().lower()
+                == correct_answer
             ),
             None,
         )
 
-        st.radio(
-            "Choose your answer",
-            option_labels,
-            index=(
-                option_labels.index(previous_choice)
-                if previous_choice in option_labels
-                else None
-            ),
-            disabled=True,
-            key=f"submitted_{quiz_settings}_{question_index}",
+        incorrect_questions.append(
+            {
+                "question": question.get("question", ""),
+                "your_answer": (
+                    f"{selected_option.get('label', '')}. "
+                    f"{selected_option.get('text', '')}"
+                ),
+                "correct_answer": (
+                    f"{correct_option.get('label', '')}. "
+                    f"{correct_option.get('text', '')}"
+                    if correct_option
+                    else question.get("answer", "Not available")
+                ),
+            }
         )
 
-        correct_answer = question["answer"]
+percentage = (
+    score / len(questions) * 100
+    if questions else 0
+)
 
-        if previous_answer == correct_answer:
-            st.write("Result: Correct")
-        else:
-            st.write("Result: Incorrect")
+col1, col2 = st.columns(2)
 
-        st.write(
-            f"Correct answer: {correct_answer.upper()}. "
-            f"{get_option_text(question, correct_answer)}"
-        )
+with col1:
+    st.metric("Score", f"{score}/{len(questions)}")
 
-        if st.button(
-            "Next question"
-            if question_index < total_questions - 1
-            else "View results",
-            use_container_width=True,
-        ):
+with col2:
+    st.metric("Percentage", f"{percentage:.1f}%")
 
-            st.session_state["question_index"] += 1
+st.write(f"Answered: {answered}")
+st.write(f"Incorrect: {len(incorrect_questions)}")
+st.write(f"Unanswered: {unanswered}")
 
-            if (
-                st.session_state["question_index"]
-                >= total_questions
-            ):
-                st.session_state["quiz_finished"] = True
 
-            st.rerun()
+# --------------------------------------------------
+# REVIEW INCORRECT ANSWERS
+# --------------------------------------------------
 
-    # Show unanswered question
-    else:
+if incorrect_questions:
 
-        choice = st.radio(
-            "Choose your answer",
-            option_labels,
-            index=None,
-            key=f"choice_{quiz_settings}_{question_index}",
-        )
+    with st.expander("Review Incorrect Answers"):
 
-        if st.button(
-            "Submit answer",
-            disabled=choice is None,
-            use_container_width=True,
-        ):
-
-            user_answers[question_index] = option_lookup[choice]
-            st.session_state["user_answers"] = user_answers
-            st.rerun()
-
-st.divider()
-st.caption("Wildlife Ecology - Weekly Assignment Practice")
+        for index, item in enumerate(incorrect_questions, start=1):
+            st.markdown(f"**{index}. {item['question']}**")
+            st.write(f"Your answer: {item['your_answer']}")
+            st.write(f"Correct answer: {item['correct_answer']}")
+            st.markdown("---")
