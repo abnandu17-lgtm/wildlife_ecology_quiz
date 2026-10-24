@@ -1,0 +1,2882 @@
+[
+  {
+    "week": 1,
+    "number": 1,
+    "question": "Ecology is the scientific study of _____ that determine the distribution and abundance of organisms. (Fill in the blanks)",
+    "options": [
+      {
+        "label": "a",
+        "text": "statics"
+      },
+      {
+        "label": "b",
+        "text": "interactions"
+      },
+      {
+        "label": "c",
+        "text": "dynamics"
+      },
+      {
+        "label": "d",
+        "text": "habitat"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 1,
+    "number": 2,
+    "question": "Carolus Linnaeus is considered the father of:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Biogeography"
+      },
+      {
+        "label": "b",
+        "text": "Modern taxonomy"
+      },
+      {
+        "label": "c",
+        "text": "Population ecology"
+      },
+      {
+        "label": "d",
+        "text": "Botanical geography"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 1,
+    "number": 3,
+    "question": "\"Enquiry into plants\" is a book written by",
+    "options": [
+      {
+        "label": "a",
+        "text": "Theophrastus"
+      },
+      {
+        "label": "b",
+        "text": "Linnaeus"
+      },
+      {
+        "label": "c",
+        "text": "Malthus"
+      },
+      {
+        "label": "d",
+        "text": "Humboldt"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 1,
+    "number": 4,
+    "question": "Who amongst these is considered the father of Biogeography?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Theophrastus"
+      },
+      {
+        "label": "b",
+        "text": "Linnaeus"
+      },
+      {
+        "label": "c",
+        "text": "Malthus"
+      },
+      {
+        "label": "d",
+        "text": "Humboldt"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 1,
+    "number": 5,
+    "question": "Genetic adaptation refers to:",
+    "options": [
+      {
+        "label": "a",
+        "text": "High reproductive rate in one generation"
+      },
+      {
+        "label": "b",
+        "text": "Inheritable fitness"
+      },
+      {
+        "label": "c",
+        "text": "Physical strength of an individual"
+      },
+      {
+        "label": "d",
+        "text": "Short-term environmental comfort"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 1,
+    "number": 6,
+    "question": "Thomas Robert Malthus influenced studies in:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Community ecology"
+      },
+      {
+        "label": "b",
+        "text": "Marine ecology"
+      },
+      {
+        "label": "c",
+        "text": "Population ecology"
+      },
+      {
+        "label": "d",
+        "text": "Behavioural ecology"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 1,
+    "number": 7,
+    "question": "Which approach tests ecological ideas through experiments?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Theoretical approach"
+      },
+      {
+        "label": "b",
+        "text": "Field approach"
+      },
+      {
+        "label": "c",
+        "text": "Laboratory approach"
+      },
+      {
+        "label": "d",
+        "text": "Descriptive approach"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 1,
+    "number": 8,
+    "question": "Which approach mainly depends on direct observation of organisms in natural surroundings?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Laboratory approach"
+      },
+      {
+        "label": "b",
+        "text": "Historical approach"
+      },
+      {
+        "label": "c",
+        "text": "Theoretical approach"
+      },
+      {
+        "label": "d",
+        "text": "Field approach"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 1,
+    "number": 9,
+    "question": "In the Greek word root of Ecology, logos refers to",
+    "options": [
+      {
+        "label": "a",
+        "text": "household"
+      },
+      {
+        "label": "b",
+        "text": "preservation"
+      },
+      {
+        "label": "c",
+        "text": "environment"
+      },
+      {
+        "label": "d",
+        "text": "study"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 1,
+    "number": 10,
+    "question": "Charles Darwin is associated with:",
+    "options": [
+      {
+        "label": "a",
+        "text": "The theory of ecosystem formation"
+      },
+      {
+        "label": "b",
+        "text": "The theory of taxonomy"
+      },
+      {
+        "label": "c",
+        "text": "The theory of botanical geography"
+      },
+      {
+        "label": "d",
+        "text": "The theory of evolution and natural selection"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 2,
+    "number": 1,
+    "question": "Hierarchy emerges almost inevitably through a wide variety of evolutionary processes, for the simple reason that hierarchical structures are ____________ (Fill in the blank)",
+    "options": [
+      {
+        "label": "a",
+        "text": "perfect"
+      },
+      {
+        "label": "b",
+        "text": "imperfect"
+      },
+      {
+        "label": "c",
+        "text": "stable"
+      },
+      {
+        "label": "d",
+        "text": "unstable"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 2,
+    "number": 2,
+    "question": "Which level is formed when similar cells and their extracellular matrix from the same origin together perform a specific function?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Organ"
+      },
+      {
+        "label": "b",
+        "text": "Tissue"
+      },
+      {
+        "label": "c",
+        "text": "Organ system"
+      },
+      {
+        "label": "d",
+        "text": "Population"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 2,
+    "number": 3,
+    "question": "\"the diversity that exists within an ecosystem\" is",
+    "options": [
+      {
+        "label": "a",
+        "text": "alpha (α) biodiversity"
+      },
+      {
+        "label": "b",
+        "text": "beta (β) biodiversity"
+      },
+      {
+        "label": "c",
+        "text": "gamma (γ) biodiversity"
+      },
+      {
+        "label": "d",
+        "text": "delta (δ) biodiversity"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 2,
+    "number": 4,
+    "question": "\"groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such groups\" is a definition of",
+    "options": [
+      {
+        "label": "a",
+        "text": "cells"
+      },
+      {
+        "label": "b",
+        "text": "species"
+      },
+      {
+        "label": "c",
+        "text": "ecosystems"
+      },
+      {
+        "label": "d",
+        "text": "biomes"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 2,
+    "number": 5,
+    "question": "The emergent principle can be stated as",
+    "options": [
+      {
+        "label": "a",
+        "text": "Whole = sum of parts"
+      },
+      {
+        "label": "b",
+        "text": "Whole < sum of parts"
+      },
+      {
+        "label": "c",
+        "text": "Whole > sum of parts"
+      },
+      {
+        "label": "d",
+        "text": "None of these"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 2,
+    "number": 6,
+    "question": "The smallest unit of life is the:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Cell"
+      },
+      {
+        "label": "b",
+        "text": "Tissue"
+      },
+      {
+        "label": "c",
+        "text": "Organ"
+      },
+      {
+        "label": "d",
+        "text": "Organism"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 2,
+    "number": 7,
+    "question": "The diversity of genetic information present at the levels of phyla, families, species, populations and individuals is called:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Ecosystem biodiversity"
+      },
+      {
+        "label": "b",
+        "text": "Species evenness"
+      },
+      {
+        "label": "c",
+        "text": "Genetic biodiversity"
+      },
+      {
+        "label": "d",
+        "text": "Species richness"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 2,
+    "number": 8,
+    "question": "The value of leaving use and non-use values for future generations is called:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Altruistic value"
+      },
+      {
+        "label": "b",
+        "text": "Option value"
+      },
+      {
+        "label": "c",
+        "text": "Existence value"
+      },
+      {
+        "label": "d",
+        "text": "Bequest value"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 2,
+    "number": 9,
+    "question": "Value arising even though a resource is not being used is called:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Direct value"
+      },
+      {
+        "label": "b",
+        "text": "Indirect value"
+      },
+      {
+        "label": "c",
+        "text": "Non-use value"
+      },
+      {
+        "label": "d",
+        "text": "Productive value"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 2,
+    "number": 10,
+    "question": "Species richness refers to:",
+    "options": [
+      {
+        "label": "a",
+        "text": "The distribution of individuals among different species"
+      },
+      {
+        "label": "b",
+        "text": "The genetic variation within one population"
+      },
+      {
+        "label": "c",
+        "text": "The number of ecosystems in a biome"
+      },
+      {
+        "label": "d",
+        "text": "The number of species present"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 3,
+    "number": 1,
+    "question": "I observe a bird take a tick out of another bird's head and eat it. In the social context, this behaviour would be called",
+    "options": [
+      {
+        "label": "a",
+        "text": "tick hunting"
+      },
+      {
+        "label": "b",
+        "text": "auto grooming"
+      },
+      {
+        "label": "c",
+        "text": "allo grooming"
+      },
+      {
+        "label": "d",
+        "text": "foraging"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 3,
+    "number": 2,
+    "question": "Leech is an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "endoparasite"
+      },
+      {
+        "label": "b",
+        "text": "herbivore predator"
+      },
+      {
+        "label": "c",
+        "text": "parasitoid"
+      },
+      {
+        "label": "d",
+        "text": "ectoparasite"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 3,
+    "number": 3,
+    "question": "An ecological interaction in which both participating organisms are harmed is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "mutualism"
+      },
+      {
+        "label": "b",
+        "text": "commensalism"
+      },
+      {
+        "label": "c",
+        "text": "competition"
+      },
+      {
+        "label": "d",
+        "text": "neutralism"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 3,
+    "number": 4,
+    "question": "Interspecific interaction occurs between",
+    "options": [
+      {
+        "label": "a",
+        "text": "members of different species"
+      },
+      {
+        "label": "b",
+        "text": "members of the same species"
+      },
+      {
+        "label": "c",
+        "text": "two organisms that are both benefited"
+      },
+      {
+        "label": "d",
+        "text": "two organisms that remain unaffected"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 3,
+    "number": 5,
+    "question": "The distance maintained by nesting penguins to avoid pecking from neighbours is related to",
+    "options": [
+      {
+        "label": "a",
+        "text": "herbivory"
+      },
+      {
+        "label": "b",
+        "text": "parasitoid pressure"
+      },
+      {
+        "label": "c",
+        "text": "prey switching"
+      },
+      {
+        "label": "d",
+        "text": "territorial spacing"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 3,
+    "number": 6,
+    "question": "A parasite that lives inside the body of its host is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "ectoparasite"
+      },
+      {
+        "label": "b",
+        "text": "endoparasite"
+      },
+      {
+        "label": "c",
+        "text": "predator"
+      },
+      {
+        "label": "d",
+        "text": "commensal"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 3,
+    "number": 7,
+    "question": "Birds on giraffe are an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "colony"
+      },
+      {
+        "label": "b",
+        "text": "commensalism"
+      },
+      {
+        "label": "c",
+        "text": "protocooperation"
+      },
+      {
+        "label": "d",
+        "text": "allelopathy"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 3,
+    "number": 8,
+    "question": "Competition in which organisms directly consume a limited resource so that less remains for others is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "interference competition"
+      },
+      {
+        "label": "b",
+        "text": "exploitative competition"
+      },
+      {
+        "label": "c",
+        "text": "apparent competition"
+      },
+      {
+        "label": "d",
+        "text": "neutral competition"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 3,
+    "number": 9,
+    "question": "Interference competition is also known as",
+    "options": [
+      {
+        "label": "a",
+        "text": "apparent competition"
+      },
+      {
+        "label": "b",
+        "text": "contest competition"
+      },
+      {
+        "label": "c",
+        "text": "niche competition"
+      },
+      {
+        "label": "d",
+        "text": "exploitative competition"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 3,
+    "number": 10,
+    "question": "The scientific study of animal behaviour is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "behaviourism"
+      },
+      {
+        "label": "b",
+        "text": "ecology"
+      },
+      {
+        "label": "c",
+        "text": "ethology"
+      },
+      {
+        "label": "d",
+        "text": "prey-predator dynamics"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 4,
+    "number": 1,
+    "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain,",
+    "options": [
+      {
+        "label": "a",
+        "text": "hawk is producer"
+      },
+      {
+        "label": "b",
+        "text": "hawk is consumer and carnivore"
+      },
+      {
+        "label": "c",
+        "text": "hawk is consumer and herbivore"
+      },
+      {
+        "label": "d",
+        "text": "hawk is decomposer"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 4,
+    "number": 2,
+    "question": "Trees → Birds → Parasites → Hyperparasites represents",
+    "options": [
+      {
+        "label": "a",
+        "text": "upright pyramid of numbers"
+      },
+      {
+        "label": "b",
+        "text": "inverted pyramid of numbers"
+      },
+      {
+        "label": "c",
+        "text": "spindle pyramid of numbers"
+      },
+      {
+        "label": "d",
+        "text": "dumb-bell pyramid of numbers"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 4,
+    "number": 3,
+    "question": "Glacial lakes are typical examples of",
+    "options": [
+      {
+        "label": "a",
+        "text": "eutrophic lakes"
+      },
+      {
+        "label": "b",
+        "text": "hypereutrophic lakes"
+      },
+      {
+        "label": "c",
+        "text": "oligotrophic lakes"
+      },
+      {
+        "label": "d",
+        "text": "mesotrophic lakes"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 4,
+    "number": 4,
+    "question": "In a grazing food chain, the first trophic level after producers is generally occupied by:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Carnivores"
+      },
+      {
+        "label": "b",
+        "text": "Decomposers"
+      },
+      {
+        "label": "c",
+        "text": "Detritivores"
+      },
+      {
+        "label": "d",
+        "text": "Herbivores"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 4,
+    "number": 5,
+    "question": "Which statement correctly defines net primary production?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Energy intercepted by producers from the Sun"
+      },
+      {
+        "label": "b",
+        "text": "Total energy lost during transfer between trophic levels"
+      },
+      {
+        "label": "c",
+        "text": "Gross primary production minus energy lost through respiration per unit time"
+      },
+      {
+        "label": "d",
+        "text": "Energy stored only in herbivore biomass"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 4,
+    "number": 6,
+    "question": "Which statement correctly defines gross primary production?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Energy fixed through photosynthesis per unit time"
+      },
+      {
+        "label": "b",
+        "text": "Energy lost by organisms through respiration per unit time"
+      },
+      {
+        "label": "c",
+        "text": "Total number of producers in an ecosystem"
+      },
+      {
+        "label": "d",
+        "text": "Organic matter consumed by herbivores per unit time"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 4,
+    "number": 7,
+    "question": "Which chain best represents a detritus food chain?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Fallen leaves → detritivores → small fish → large fish"
+      },
+      {
+        "label": "b",
+        "text": "Grass → chital → tiger"
+      },
+      {
+        "label": "c",
+        "text": "Rat → flea → parasitic protozoa"
+      },
+      {
+        "label": "d",
+        "text": "Phytoplankton → zooplankton → fish → sea lion"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 4,
+    "number": 8,
+    "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. As we move up the food chain,",
+    "options": [
+      {
+        "label": "a",
+        "text": "available energy decreases"
+      },
+      {
+        "label": "b",
+        "text": "available energy increases"
+      },
+      {
+        "label": "c",
+        "text": "available energy remains same"
+      },
+      {
+        "label": "d",
+        "text": "available energy is zero everywhere"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 4,
+    "number": 9,
+    "question": "Which statement correctly describes a decomposer?",
+    "options": [
+      {
+        "label": "a",
+        "text": "It only feeds on living plants"
+      },
+      {
+        "label": "b",
+        "text": "It consumes only primary consumers"
+      },
+      {
+        "label": "c",
+        "text": "It converts dead material into soil and recycles nutrients"
+      },
+      {
+        "label": "d",
+        "text": "It always occupies the quaternary trophic level"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 4,
+    "number": 10,
+    "question": "Which description best defines a heterotroph?",
+    "options": [
+      {
+        "label": "a",
+        "text": "An organism that converts sunlight directly into inorganic nutrients"
+      },
+      {
+        "label": "b",
+        "text": "An organism that cannot produce its own food and depends on organic carbon from other sources"
+      },
+      {
+        "label": "c",
+        "text": "An organism that uses chemical reactions to manufacture minerals"
+      },
+      {
+        "label": "d",
+        "text": "An organism that occupies only the first trophic level"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 5,
+    "number": 1,
+    "question": "In population dynamics, which pair represents additions to an existing population?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Mortality and emigration"
+      },
+      {
+        "label": "b",
+        "text": "Natality and immigration"
+      },
+      {
+        "label": "c",
+        "text": "Mortality and natality"
+      },
+      {
+        "label": "d",
+        "text": "Immigration and emigration"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 5,
+    "number": 2,
+    "question": "Cover board surveys are typically used for sampling",
+    "options": [
+      {
+        "label": "a",
+        "text": "herpetofauna"
+      },
+      {
+        "label": "b",
+        "text": "fishes"
+      },
+      {
+        "label": "c",
+        "text": "large mammals"
+      },
+      {
+        "label": "d",
+        "text": "carnivores"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 5,
+    "number": 3,
+    "question": "Pan traps are used for sampling",
+    "options": [
+      {
+        "label": "a",
+        "text": "bees"
+      },
+      {
+        "label": "b",
+        "text": "butterflies"
+      },
+      {
+        "label": "c",
+        "text": "non-pollinator insects"
+      },
+      {
+        "label": "d",
+        "text": "pollinator insects"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 5,
+    "number": 4,
+    "question": "A sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as",
+    "options": [
+      {
+        "label": "a",
+        "text": "Simple random sampling"
+      },
+      {
+        "label": "b",
+        "text": "Systematic sampling"
+      },
+      {
+        "label": "c",
+        "text": "Stratified sampling"
+      },
+      {
+        "label": "d",
+        "text": "Multistage sampling"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 5,
+    "number": 5,
+    "question": "The minimum replacement level fertility for a population to grow should be greater than",
+    "options": [
+      {
+        "label": "a",
+        "text": "1"
+      },
+      {
+        "label": "b",
+        "text": "2"
+      },
+      {
+        "label": "c",
+        "text": "3"
+      },
+      {
+        "label": "d",
+        "text": "4"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 5,
+    "number": 6,
+    "question": "A list of sampling units is called a:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Sample"
+      },
+      {
+        "label": "b",
+        "text": "Sampling intensity"
+      },
+      {
+        "label": "c",
+        "text": "Sampling frame"
+      },
+      {
+        "label": "d",
+        "text": "Stratum"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 5,
+    "number": 7,
+    "question": "In capture-recapture method, the first stage involves:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Counting faecal pellets"
+      },
+      {
+        "label": "b",
+        "text": "Removing trapped animals permanently"
+      },
+      {
+        "label": "c",
+        "text": "Estimating bait consumption"
+      },
+      {
+        "label": "d",
+        "text": "Capturing, marking and releasing animals"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 5,
+    "number": 8,
+    "question": "The logistic growth equation, when plotted, appears",
+    "options": [
+      {
+        "label": "a",
+        "text": "I shaped"
+      },
+      {
+        "label": "b",
+        "text": "J shaped"
+      },
+      {
+        "label": "c",
+        "text": "S shaped"
+      },
+      {
+        "label": "d",
+        "text": "O shaped"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 5,
+    "number": 9,
+    "question": "_____ employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start.",
+    "options": [
+      {
+        "label": "a",
+        "text": "Simple random sampling"
+      },
+      {
+        "label": "b",
+        "text": "Systematic sampling"
+      },
+      {
+        "label": "c",
+        "text": "Stratified sampling"
+      },
+      {
+        "label": "d",
+        "text": "Multistage sampling"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 5,
+    "number": 10,
+    "question": "Which of these is not a measure of absolute population density?",
+    "options": [
+      {
+        "label": "a",
+        "text": "total count"
+      },
+      {
+        "label": "b",
+        "text": "pelt count"
+      },
+      {
+        "label": "c",
+        "text": "capture-recapture method"
+      },
+      {
+        "label": "d",
+        "text": "removal method"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 6,
+    "number": 1,
+    "question": "A guild is a group of species that",
+    "options": [
+      {
+        "label": "a",
+        "text": "Occupy only one climax community"
+      },
+      {
+        "label": "b",
+        "text": "Have identical population size"
+      },
+      {
+        "label": "c",
+        "text": "Utilise resources in a similar way"
+      },
+      {
+        "label": "d",
+        "text": "Are confined to saline habitats"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 6,
+    "number": 2,
+    "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "climatic climax"
+      },
+      {
+        "label": "b",
+        "text": "edaphic climax"
+      },
+      {
+        "label": "c",
+        "text": "disclimax"
+      },
+      {
+        "label": "d",
+        "text": "catastrophic climax"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 6,
+    "number": 3,
+    "question": "Species abundance may be expressed in terms of",
+    "options": [
+      {
+        "label": "a",
+        "text": "Climate, soil and slope"
+      },
+      {
+        "label": "b",
+        "text": "Number of individuals, biomass or cover"
+      },
+      {
+        "label": "c",
+        "text": "Hydrosere, xerosere and halosere"
+      },
+      {
+        "label": "d",
+        "text": "Resistance, resilience and stability"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 6,
+    "number": 4,
+    "question": "Resistance refers to the ability of a community to",
+    "options": [
+      {
+        "label": "a",
+        "text": "Recover quickly after disturbance"
+      },
+      {
+        "label": "b",
+        "text": "Persist without change in the face of disturbance"
+      },
+      {
+        "label": "c",
+        "text": "Increase the number of pioneer species"
+      },
+      {
+        "label": "d",
+        "text": "Replace one seral stage with another"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 6,
+    "number": 5,
+    "question": "Importance value can be written as",
+    "options": [
+      {
+        "label": "a",
+        "text": "Relative density + Relative frequency X Relative dominance"
+      },
+      {
+        "label": "b",
+        "text": "Relative density X Relative frequency + Relative dominance"
+      },
+      {
+        "label": "c",
+        "text": "Relative density + Relative frequency + Relative dominance"
+      },
+      {
+        "label": "d",
+        "text": "Relative density X Relative frequency X Relative dominance"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 6,
+    "number": 6,
+    "question": "Secondary succession refers to succession that occurs",
+    "options": [
+      {
+        "label": "a",
+        "text": "On newly exposed rock or sand surfaces"
+      },
+      {
+        "label": "b",
+        "text": "In a saline body such as a marsh"
+      },
+      {
+        "label": "c",
+        "text": "After severe disturbance or removal of a pre-existing community"
+      },
+      {
+        "label": "d",
+        "text": "Only when climate controls the final community"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 6,
+    "number": 7,
+    "question": "Lithosere is an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "hydrosere"
+      },
+      {
+        "label": "b",
+        "text": "xerosere"
+      },
+      {
+        "label": "c",
+        "text": "psammosere"
+      },
+      {
+        "label": "d",
+        "text": "halosere"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 6,
+    "number": 8,
+    "question": "A transition area where two communities meet and integrate is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "Habitat"
+      },
+      {
+        "label": "b",
+        "text": "Niche"
+      },
+      {
+        "label": "c",
+        "text": "Ecotone"
+      },
+      {
+        "label": "d",
+        "text": "Sere"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 6,
+    "number": 9,
+    "question": "Which of these is correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Fundamental niche > Realised niche"
+      },
+      {
+        "label": "b",
+        "text": "Fundamental niche = Realised niche"
+      },
+      {
+        "label": "c",
+        "text": "Fundamental niche < Realised niche"
+      },
+      {
+        "label": "d",
+        "text": "a or b"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 6,
+    "number": 10,
+    "question": "Species richness refers to",
+    "options": [
+      {
+        "label": "a",
+        "text": "Number of species"
+      },
+      {
+        "label": "b",
+        "text": "Number of individuals of one species"
+      },
+      {
+        "label": "c",
+        "text": "Biomass of the dominant species"
+      },
+      {
+        "label": "d",
+        "text": "Basal area of all trees"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 7,
+    "number": 1,
+    "question": "In an estuary, species may use areas of",
+    "options": [
+      {
+        "label": "a",
+        "text": "high, intermediate, and low salinity"
+      },
+      {
+        "label": "b",
+        "text": "only high temperature and high fertility"
+      },
+      {
+        "label": "c",
+        "text": "only alpine wind and poor soil"
+      },
+      {
+        "label": "d",
+        "text": "only forest canopy and grassland patches"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 7,
+    "number": 2,
+    "question": "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "translocation"
+      },
+      {
+        "label": "b",
+        "text": "migration"
+      },
+      {
+        "label": "c",
+        "text": "dispersal"
+      },
+      {
+        "label": "d",
+        "text": "drifting"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 7,
+    "number": 3,
+    "question": "Transplantation experiments are used to find",
+    "options": [
+      {
+        "label": "a",
+        "text": "potential range"
+      },
+      {
+        "label": "b",
+        "text": "effective range"
+      },
+      {
+        "label": "c",
+        "text": "actual range"
+      },
+      {
+        "label": "d",
+        "text": "economic range"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 7,
+    "number": 4,
+    "question": "Pneumatophores are roots that",
+    "options": [
+      {
+        "label": "a",
+        "text": "move downward to store excess salts"
+      },
+      {
+        "label": "b",
+        "text": "spread into sand dunes to stop wind erosion"
+      },
+      {
+        "label": "c",
+        "text": "grow upward from the ground to obtain air"
+      },
+      {
+        "label": "d",
+        "text": "become thorns to reduce transpiration"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 7,
+    "number": 5,
+    "question": "At night, cooler and denser air from upper hill areas flows down towards the valley. This wind pattern is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "valley breeze"
+      },
+      {
+        "label": "b",
+        "text": "hill wind"
+      },
+      {
+        "label": "c",
+        "text": "ocean breeze"
+      },
+      {
+        "label": "d",
+        "text": "estuary current"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 7,
+    "number": 6,
+    "question": "Flamingos in the Rann of Kutch are associated with water bodies because they need",
+    "options": [
+      {
+        "label": "a",
+        "text": "high wind speeds and snow-covered slopes"
+      },
+      {
+        "label": "b",
+        "text": "food organisms in water and safe breeding conditions"
+      },
+      {
+        "label": "c",
+        "text": "dry deciduous leaves for summer feeding"
+      },
+      {
+        "label": "d",
+        "text": "tall coniferous trees for nesting"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 7,
+    "number": 7,
+    "question": "Estuaries are specialized habitats because they contain",
+    "options": [
+      {
+        "label": "a",
+        "text": "only freshwater throughout the year"
+      },
+      {
+        "label": "b",
+        "text": "only saline water throughout the year"
+      },
+      {
+        "label": "c",
+        "text": "only dry land and thorny shrubs"
+      },
+      {
+        "label": "d",
+        "text": "a meeting zone of freshwater and saline water"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 7,
+    "number": 8,
+    "question": "The movement of lions across the Gir landscape is an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "diffusion"
+      },
+      {
+        "label": "b",
+        "text": "secular dispersal"
+      },
+      {
+        "label": "c",
+        "text": "jump dispersal"
+      },
+      {
+        "label": "d",
+        "text": "drifting"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 7,
+    "number": 9,
+    "question": "Mangroves are adapted to areas that experience",
+    "options": [
+      {
+        "label": "a",
+        "text": "low salinity and permanent dryness"
+      },
+      {
+        "label": "b",
+        "text": "snow accumulation and alpine winds"
+      },
+      {
+        "label": "c",
+        "text": "deep desert sand with no water movement"
+      },
+      {
+        "label": "d",
+        "text": "high salinity and partial or complete inundation"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 7,
+    "number": 10,
+    "question": "Scarcity of food is a",
+    "options": [
+      {
+        "label": "a",
+        "text": "chemical factor"
+      },
+      {
+        "label": "b",
+        "text": "demographic factor"
+      },
+      {
+        "label": "c",
+        "text": "push factor"
+      },
+      {
+        "label": "d",
+        "text": "pull factor"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 8,
+    "number": 1,
+    "question": "Which of these correctly represents the process of habitat fragmentation and loss?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Original forest → Dissection → Perforation → Fragmentation → Attrition"
+      },
+      {
+        "label": "b",
+        "text": "Original forest → Dissection → Attrition → Fragmentation → Perforation"
+      },
+      {
+        "label": "c",
+        "text": "Original forest → Dissection → Perforation → Attrition → Fragmentation"
+      },
+      {
+        "label": "d",
+        "text": "Original forest → Dissection → Fragmentation → Perforation → Attrition"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 8,
+    "number": 2,
+    "question": "Habitat degradation means",
+    "options": [
+      {
+        "label": "a",
+        "text": "complete removal of all organisms from an area"
+      },
+      {
+        "label": "b",
+        "text": "legal declaration of a protected area"
+      },
+      {
+        "label": "c",
+        "text": "breaking a forest into administrative zones"
+      },
+      {
+        "label": "d",
+        "text": "reduction in habitat quality for a given species"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 8,
+    "number": 3,
+    "question": "When area is reduced by 90% and z is taken as 0.30, species richness approximately becomes",
+    "options": [
+      {
+        "label": "a",
+        "text": "one-tenth of the original"
+      },
+      {
+        "label": "b",
+        "text": "half of the original"
+      },
+      {
+        "label": "c",
+        "text": "double the original"
+      },
+      {
+        "label": "d",
+        "text": "unchanged"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 8,
+    "number": 4,
+    "question": "Breaking a natural landscape into small isolated parcels within human-dominated land is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "habitat restoration"
+      },
+      {
+        "label": "b",
+        "text": "habitat fragmentation"
+      },
+      {
+        "label": "c",
+        "text": "ex-situ preservation"
+      },
+      {
+        "label": "d",
+        "text": "seed dormancy"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 8,
+    "number": 5,
+    "question": "We prefer those areas for the creation of a conservation reserve where the level of threat is",
+    "options": [
+      {
+        "label": "a",
+        "text": "very high"
+      },
+      {
+        "label": "b",
+        "text": "medium"
+      },
+      {
+        "label": "c",
+        "text": "very low"
+      },
+      {
+        "label": "d",
+        "text": "non-existent"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 8,
+    "number": 6,
+    "question": "A very small population moves towards extinction mainly because of Allee effect, chance deaths, and related small-population problems. This is best described as",
+    "options": [
+      {
+        "label": "a",
+        "text": "habitat displacement"
+      },
+      {
+        "label": "b",
+        "text": "small population paradigm"
+      },
+      {
+        "label": "c",
+        "text": "reserve design"
+      },
+      {
+        "label": "d",
+        "text": "biodiversity repository"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 8,
+    "number": 7,
+    "question": "A population becomes smaller because its habitat is shrinking, competitors are increasing, and poaching is removing individuals. This situation is best studied under",
+    "options": [
+      {
+        "label": "a",
+        "text": "declining population paradigm"
+      },
+      {
+        "label": "b",
+        "text": "small population paradigm"
+      },
+      {
+        "label": "c",
+        "text": "island biogeography model"
+      },
+      {
+        "label": "d",
+        "text": "cryopreservation strategy"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 8,
+    "number": 8,
+    "question": "Which of these is a deterministic factor?",
+    "options": [
+      {
+        "label": "a",
+        "text": "environmental variation"
+      },
+      {
+        "label": "b",
+        "text": "forest fire"
+      },
+      {
+        "label": "c",
+        "text": "death rate"
+      },
+      {
+        "label": "d",
+        "text": "diseases"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 8,
+    "number": 9,
+    "question": "Roads, railways, dams, and similar structures contribute to fragmentation because they may act as",
+    "options": [
+      {
+        "label": "a",
+        "text": "mortality sources and physical barriers"
+      },
+      {
+        "label": "b",
+        "text": "seed collection centres"
+      },
+      {
+        "label": "c",
+        "text": "botanical repositories"
+      },
+      {
+        "label": "d",
+        "text": "cryopreservation facilities"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 8,
+    "number": 10,
+    "question": "The acronym HIPPO does not include",
+    "options": [
+      {
+        "label": "a",
+        "text": "habitat loss"
+      },
+      {
+        "label": "b",
+        "text": "invasive species"
+      },
+      {
+        "label": "c",
+        "text": "pollination"
+      },
+      {
+        "label": "d",
+        "text": "pollution"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 9,
+    "number": 1,
+    "question": "A proposed epoch marked by significant human impact on Earth’s geology and ecosystems is called?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Holocene"
+      },
+      {
+        "label": "b",
+        "text": "Anthropocene"
+      },
+      {
+        "label": "c",
+        "text": "Pleistocene"
+      },
+      {
+        "label": "d",
+        "text": "Carboniferous"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 9,
+    "number": 2,
+    "question": "According to Malthusian model,",
+    "options": [
+      {
+        "label": "a",
+        "text": "Population grows in geometric progression, food supply increases in arithmetic progression"
+      },
+      {
+        "label": "b",
+        "text": "Population grows in geometric progression, food supply increases in geometric progression"
+      },
+      {
+        "label": "c",
+        "text": "Population grows in arithmetic progression, food supply increases in arithmetic progression"
+      },
+      {
+        "label": "d",
+        "text": "Population grows in arithmetic progression, food supply increases in geometric progression"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 9,
+    "number": 3,
+    "question": "Which of these is not a pillar of sustainability?",
+    "options": [
+      {
+        "label": "a",
+        "text": "environmental sustainability"
+      },
+      {
+        "label": "b",
+        "text": "economic sustainability"
+      },
+      {
+        "label": "c",
+        "text": "trans-boundary sustainability"
+      },
+      {
+        "label": "d",
+        "text": "social sustainability"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 9,
+    "number": 4,
+    "question": "The demographic transition sees a society move from",
+    "options": [
+      {
+        "label": "a",
+        "text": "high birth rate, low death rate to low birth rate, low death rate"
+      },
+      {
+        "label": "b",
+        "text": "low birth rate, high death rate to low birth rate, low death rate"
+      },
+      {
+        "label": "c",
+        "text": "high birth rate, high death rate to low birth rate, low death rate"
+      },
+      {
+        "label": "d",
+        "text": "high birth rate, high death rate to low birth rate, high death rate"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 9,
+    "number": 5,
+    "question": "Which of the following is listed as a theme of clean technology?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Water purification"
+      },
+      {
+        "label": "b",
+        "text": "Predator-prey control"
+      },
+      {
+        "label": "c",
+        "text": "Migration of birds"
+      },
+      {
+        "label": "d",
+        "text": "Food chain length"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 9,
+    "number": 6,
+    "question": "When stalactites and stalagmites join together, they form a?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Lagoon"
+      },
+      {
+        "label": "b",
+        "text": "Crevice"
+      },
+      {
+        "label": "c",
+        "text": "Terrace"
+      },
+      {
+        "label": "d",
+        "text": "Column"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 9,
+    "number": 7,
+    "question": "Which of these is a preventive check according to Malthus?",
+    "options": [
+      {
+        "label": "a",
+        "text": "foresight"
+      },
+      {
+        "label": "b",
+        "text": "vice"
+      },
+      {
+        "label": "c",
+        "text": "misery"
+      },
+      {
+        "label": "d",
+        "text": "flood"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 9,
+    "number": 8,
+    "question": "Which of these is a pillar of sustainability",
+    "options": [
+      {
+        "label": "a",
+        "text": "social sustainability"
+      },
+      {
+        "label": "b",
+        "text": "industrial sustainability"
+      },
+      {
+        "label": "c",
+        "text": "agricultural sustainability"
+      },
+      {
+        "label": "d",
+        "text": "trans-boundary sustainability"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 9,
+    "number": 9,
+    "question": "In cave formations, the deposits growing downward from the roof are called?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Stalagmites"
+      },
+      {
+        "label": "b",
+        "text": "Columns"
+      },
+      {
+        "label": "c",
+        "text": "Stalactites"
+      },
+      {
+        "label": "d",
+        "text": "Sediment bars"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 9,
+    "number": 10,
+    "question": "Industrial processes such as the Haber process affect which biogeochemical cycle?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Carbon cycle only"
+      },
+      {
+        "label": "b",
+        "text": "Water cycle only"
+      },
+      {
+        "label": "c",
+        "text": "Nitrogen cycle"
+      },
+      {
+        "label": "d",
+        "text": "Phosphorus cycle only"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 10,
+    "number": 1,
+    "question": "A community already affected by disease, weeds, pollutants, or livestock pressure is best described as which type of community?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Pristine community"
+      },
+      {
+        "label": "b",
+        "text": "Climax community"
+      },
+      {
+        "label": "c",
+        "text": "Resistant community"
+      },
+      {
+        "label": "d",
+        "text": "Disturbed community"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 10,
+    "number": 2,
+    "question": "When an organism absorbs a toxic substance into its tissues faster than it loses it, the process is called:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Biomagnification"
+      },
+      {
+        "label": "b",
+        "text": "Bioavailability"
+      },
+      {
+        "label": "c",
+        "text": "Bioaccumulation"
+      },
+      {
+        "label": "d",
+        "text": "Biodegradation"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 10,
+    "number": 3,
+    "question": "What percentage of marine plastic debris is stated to sink to the ocean bottom?",
+    "options": [
+      {
+        "label": "a",
+        "text": "15%"
+      },
+      {
+        "label": "b",
+        "text": "30%"
+      },
+      {
+        "label": "c",
+        "text": "50%"
+      },
+      {
+        "label": "d",
+        "text": "70%"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 10,
+    "number": 4,
+    "question": "Hydrocarbons derived directly from mineral oils are called:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Pyrogenic hydrocarbons"
+      },
+      {
+        "label": "b",
+        "text": "Biogenic hydrocarbons"
+      },
+      {
+        "label": "c",
+        "text": "Aromatic hydrocarbons"
+      },
+      {
+        "label": "d",
+        "text": "Petrogenic hydrocarbons"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 10,
+    "number": 5,
+    "question": "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead” is a definition for",
+    "options": [
+      {
+        "label": "a",
+        "text": "adaptation"
+      },
+      {
+        "label": "b",
+        "text": "mitigation"
+      },
+      {
+        "label": "c",
+        "text": "maladaptation"
+      },
+      {
+        "label": "d",
+        "text": "malmitigation"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 10,
+    "number": 6,
+    "question": "A normal ecological community faces one large and infrequent disturbance and then returns close to its earlier condition. Which outcome is best represented?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Long-term alteration"
+      },
+      {
+        "label": "b",
+        "text": "Recovery"
+      },
+      {
+        "label": "c",
+        "text": "Bioaccumulation"
+      },
+      {
+        "label": "d",
+        "text": "Habitat displacement"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 10,
+    "number": 7,
+    "question": "Macrodebris in the context of plastic debris has fragments of size",
+    "options": [
+      {
+        "label": "a",
+        "text": "> 20 mm"
+      },
+      {
+        "label": "b",
+        "text": "5 - 20 mm"
+      },
+      {
+        "label": "c",
+        "text": "< 5 mm"
+      },
+      {
+        "label": "d",
+        "text": "< 1 mm"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 10,
+    "number": 8,
+    "question": "The Deepwater Horizon incident is classified by origin as which kind of oil spill?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Natural"
+      },
+      {
+        "label": "b",
+        "text": "Accidental"
+      },
+      {
+        "label": "c",
+        "text": "Intentional"
+      },
+      {
+        "label": "d",
+        "text": "Biogenic"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 10,
+    "number": 9,
+    "question": "Harmful effects caused by a single or short-term exposure are called:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Chronic toxicity"
+      },
+      {
+        "label": "b",
+        "text": "Acute toxicity"
+      },
+      {
+        "label": "c",
+        "text": "Sub-lethal exposure"
+      },
+      {
+        "label": "d",
+        "text": "Bioavailability"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 10,
+    "number": 10,
+    "question": "Mesodebris in the context of plastic debris has fragments of size",
+    "options": [
+      {
+        "label": "a",
+        "text": "> 20 mm"
+      },
+      {
+        "label": "b",
+        "text": "5 - 20 mm"
+      },
+      {
+        "label": "c",
+        "text": "< 5 mm"
+      },
+      {
+        "label": "d",
+        "text": "< 1 mm"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 11,
+    "number": 1,
+    "question": "Which term refers to the total weight of organisms removed by fishing?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Natural mortality"
+      },
+      {
+        "label": "b",
+        "text": "Recruitment"
+      },
+      {
+        "label": "c",
+        "text": "Growth"
+      },
+      {
+        "label": "d",
+        "text": "Yield to fishery"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 11,
+    "number": 2,
+    "question": "Ludwig's ratchet predicts",
+    "options": [
+      {
+        "label": "a",
+        "text": "decreasing harvesting rate"
+      },
+      {
+        "label": "b",
+        "text": "constant harvesting rate"
+      },
+      {
+        "label": "c",
+        "text": "increasing harvesting rate"
+      },
+      {
+        "label": "d",
+        "text": "fluctuating harvesting rate"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 11,
+    "number": 3,
+    "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "recovery"
+      },
+      {
+        "label": "b",
+        "text": "restoration"
+      },
+      {
+        "label": "c",
+        "text": "enhancement"
+      },
+      {
+        "label": "d",
+        "text": "replacement"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 11,
+    "number": 4,
+    "question": "Which of these is correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "The maximum sustainable yield is near the beginning of the sigmoidal curve."
+      },
+      {
+        "label": "b",
+        "text": "The maximum sustainable yield is near the mid-point of the sigmoidal curve."
+      },
+      {
+        "label": "c",
+        "text": "The maximum sustainable yield is near the end of the sigmoidal curve."
+      },
+      {
+        "label": "d",
+        "text": "None of these."
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 11,
+    "number": 5,
+    "question": "Which of these is correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "R + G = M + F"
+      },
+      {
+        "label": "b",
+        "text": "R + M = G + F"
+      },
+      {
+        "label": "c",
+        "text": "R + F = M + G"
+      },
+      {
+        "label": "d",
+        "text": "R + G + M + F = 0"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 11,
+    "number": 6,
+    "question": "In a logistic growth curve, growth is slow near carrying capacity mainly because the population is:",
+    "options": [
+      {
+        "label": "a",
+        "text": "very small"
+      },
+      {
+        "label": "b",
+        "text": "newly introduced"
+      },
+      {
+        "label": "c",
+        "text": "close to the environmental limit"
+      },
+      {
+        "label": "d",
+        "text": "free from competition"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 11,
+    "number": 7,
+    "question": "What does absolute abundance measure?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Relative catch per unit effort"
+      },
+      {
+        "label": "b",
+        "text": "Actual number of individuals present"
+      },
+      {
+        "label": "c",
+        "text": "Percentage change in population"
+      },
+      {
+        "label": "d",
+        "text": "Estimated trend in sightings"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 11,
+    "number": 8,
+    "question": "A root zone treatment plant is an example of",
+    "options": [
+      {
+        "label": "a",
+        "text": "phytoremediation"
+      },
+      {
+        "label": "b",
+        "text": "biological control"
+      },
+      {
+        "label": "c",
+        "text": "biomagnification"
+      },
+      {
+        "label": "d",
+        "text": "bioaccumulation"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 11,
+    "number": 9,
+    "question": "What is a major risk of introducing predators for pest control?",
+    "options": [
+      {
+        "label": "a",
+        "text": "The pest always becomes extinct immediately"
+      },
+      {
+        "label": "b",
+        "text": "The predator cannot reproduce under any condition"
+      },
+      {
+        "label": "c",
+        "text": "The predator reduces rainfall"
+      },
+      {
+        "label": "d",
+        "text": "The introduced predator may itself become a pest"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 11,
+    "number": 10,
+    "question": "Ecotoxicology studies toxic chemicals mainly at which broader levels?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Individual atoms and molecules only"
+      },
+      {
+        "label": "b",
+        "text": "Population, community, ecosystem, and biosphere levels"
+      },
+      {
+        "label": "c",
+        "text": "Market demand and harvesting cost only"
+      },
+      {
+        "label": "d",
+        "text": "Crop yield and storage levels only"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 12,
+    "number": 1,
+    "question": "In cave formations, the deposits growing downward from the roof are called?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Stalagmites"
+      },
+      {
+        "label": "b",
+        "text": "Columns"
+      },
+      {
+        "label": "c",
+        "text": "Stalactites"
+      },
+      {
+        "label": "d",
+        "text": "Sediment bars"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 12,
+    "number": 2,
+    "question": "Which of these is a deterministic factor?",
+    "options": [
+      {
+        "label": "a",
+        "text": "environmental variation"
+      },
+      {
+        "label": "b",
+        "text": "forest fire"
+      },
+      {
+        "label": "c",
+        "text": "death rate"
+      },
+      {
+        "label": "d",
+        "text": "diseases"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 12,
+    "number": 3,
+    "question": "An ecological interaction in which both participating organisms are harmed is called",
+    "options": [
+      {
+        "label": "a",
+        "text": "mutualism"
+      },
+      {
+        "label": "b",
+        "text": "commensalism"
+      },
+      {
+        "label": "c",
+        "text": "competition"
+      },
+      {
+        "label": "d",
+        "text": "neutralism"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 12,
+    "number": 4,
+    "question": "Ecology is the scientific study of _____ that determine the distribution and abundance of organisms. (Fill in the blanks)",
+    "options": [
+      {
+        "label": "a",
+        "text": "statics"
+      },
+      {
+        "label": "b",
+        "text": "interactions"
+      },
+      {
+        "label": "c",
+        "text": "dynamics"
+      },
+      {
+        "label": "d",
+        "text": "habitat"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 12,
+    "number": 5,
+    "question": "Mesodebris in the context of plastic debris has fragments of size",
+    "options": [
+      {
+        "label": "a",
+        "text": "> 20 mm"
+      },
+      {
+        "label": "b",
+        "text": "5 - 20 mm"
+      },
+      {
+        "label": "c",
+        "text": "< 5 mm"
+      },
+      {
+        "label": "d",
+        "text": "< 1 mm"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 12,
+    "number": 6,
+    "question": "Which level is formed when similar cells and their extracellular matrix from the same origin together perform a specific function?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Organ"
+      },
+      {
+        "label": "b",
+        "text": "Tissue"
+      },
+      {
+        "label": "c",
+        "text": "Organ system"
+      },
+      {
+        "label": "d",
+        "text": "Population"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "week": 12,
+    "number": 7,
+    "question": "Secondary succession refers to succession that occurs",
+    "options": [
+      {
+        "label": "a",
+        "text": "On newly exposed rock or sand surfaces"
+      },
+      {
+        "label": "b",
+        "text": "In a saline body such as a marsh"
+      },
+      {
+        "label": "c",
+        "text": "After severe disturbance or removal of a pre-existing community"
+      },
+      {
+        "label": "d",
+        "text": "Only when climate controls the final community"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "week": 12,
+    "number": 8,
+    "question": "A group of organs working together to perform one or more functions is called?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Tissue"
+      },
+      {
+        "label": "b",
+        "text": "Organ"
+      },
+      {
+        "label": "c",
+        "text": "Organism"
+      },
+      {
+        "label": "d",
+        "text": "Organ system"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "week": 12,
+    "number": 9,
+    "question": "After a forest fire, an incompletely destroyed forest develops through herbaceous, shrub and woodland stages toward a stable stage. This is best described as?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Secondary succession"
+      },
+      {
+        "label": "b",
+        "text": "Climatic climax"
+      },
+      {
+        "label": "c",
+        "text": "Bioaccumulation"
+      },
+      {
+        "label": "d",
+        "text": "Species-area effect"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "week": 12,
+    "number": 10,
+    "question": "If organisms already present in an area change the soil conditions and thereby drive further community change, the succession is?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Allogenic succession"
+      },
+      {
+        "label": "b",
+        "text": "Autogenic succession"
+      },
+      {
+        "label": "c",
+        "text": "Catastrophic succession"
+      },
+      {
+        "label": "d",
+        "text": "Seasonal succession"
+      }
+    ],
+    "answer": "b"
+  }
+]
