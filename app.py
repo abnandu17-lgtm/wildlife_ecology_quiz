@@ -1,100 +1,119 @@
-label_lookup = {
-        f"{option['label'].upper()}. {option['text']}":
-        option["label"]
-        for option in question["options"]
+if selected is None:
+                    st.write("Your answer: Not answered")
+                else:
+                    st.write(
+                        "Your answer: "
+                        f"{selected.upper()}. "
+                        f"{option_text(q, selected)}"
+                    )
+
+                correct_label = q["answer"]
+                st.write(
+                    "Correct answer: "
+                    f"{correct_label.upper()}. "
+                    f"{option_text(q, correct_label)}"
+                )
+    else:
+        st.write("All answers are correct.")
+
+    if st.button("Restart quiz"):
+        for key in [
+            "questions", "answers", "index",
+            "submitted", "finished", "signature",
+        ]:
+            st.session_state.pop(key, None)
+        st.rerun()
+
+# Question page
+else:
+    question = questions[index]
+
+    st.progress((index + 1) / total if total else 0)
+
+    st.write(f"Question {index + 1} of {total}")
+    st.write(
+        f"Week {question['week']} - "
+        f"Question {question['number']}"
+    )
+
+    st.divider()
+
+    st.subheader(question["question"])
+
+    options = question["options"]
+
+    labels = [
+        f"{o['label'].upper()}. {o['text']}"
+        for o in options
+    ]
+
+    label_map = {
+        f"{o['label'].upper()}. {o['text']}": o["label"]
+        for o in options
     }
 
-    stored_answer = answers.get(idx)
+    saved_answer = answers.get(index)
 
-    radio_key = f"choice_{config_signature}_{idx}"
-
-    selected_default = next(
-        (
-            choice
-            for choice, label in label_lookup.items()
-            if label == stored_answer
-        ),
-        None,
-    )
-
-    if (
-        radio_key not in st.session_state
-        and selected_default is not None
-    ):
-        st.session_state[radio_key] = selected_default
-
-    chosen = st.radio(
-        "Choose one answer",
-        choices,
-        index=(
-            choices.index(selected_default)
-            if selected_default in choices
-            else None
-        ),
-        key=radio_key,
-        disabled=stored_answer is not None,
-    )
-
-    # Submit answer
-    if stored_answer is None:
-
-        if st.button(
-            "Submit answer",
-            type="primary",
-            use_container_width=True,
-            disabled=chosen is None,
-        ):
-            answers[idx] = label_lookup[chosen]
-            st.session_state["answers"] = answers
-            st.rerun()
-
-    # Instant feedback after submission
-    else:
+    if saved_answer is not None:
+        selected_label = next(
+            (
+                label for label in labels
+                if label_map[label] == saved_answer
+            ),
+            None,
+        )
+        st.radio(
+            "Choose one answer",
+            labels,
+            index=(
+                labels.index(selected_label)
+                if selected_label in labels else None
+            ),
+            disabled=True,
+            key=f"answered_{signature}_{index}",
+        )
 
         correct_label = question["answer"]
-        correct_text = get_option_text(question, correct_label)
 
-        if stored_answer == correct_label:
-            st.success("Correct! ✅")
+        if saved_answer == correct_label:
+            st.success("Correct answer.")
         else:
-            st.error("Incorrect. ❌")
+            st.error("Incorrect answer.")
 
-        st.info(
-            f"Correct answer: {correct_label.upper()}. {correct_text}"
-        )
-
-        correct_so_far = sum(
-            1
-            for i, item in enumerate(questions[:idx + 1])
-            if answers.get(i) == item["answer"]
-        )
-
-        col1, col2 = st.columns(2)
-
-        col1.caption(f"Correct so far: {correct_so_far}")
-        col2.caption(f"Questions remaining: {total - idx - 1}")
-
-        button_label = (
-            "Next question →"
-            if idx < total - 1
-            else "View results"
+        st.write(
+            "Correct answer: "
+            f"{correct_label.upper()}. "
+            f"{option_text(question, correct_label)}"
         )
 
         if st.button(
-            button_label,
-            type="primary",
+            "Next question" if index < total - 1
+            else "View results",
             use_container_width=True,
         ):
+            st.session_state["index"] += 1
 
-            st.session_state["current_index"] += 1
-
-            if st.session_state["current_index"] >= total:
+            if st.session_state["index"] >= total:
                 st.session_state["finished"] = True
 
             st.rerun()
 
-# -------------------- FOOTER --------------------
+    else:
+        selected = st.radio(
+            "Choose one answer",
+            labels,
+            index=None,
+            key=f"choice_{signature}_{index}",
+        )
 
-st.markdown("---")
+        if st.button(
+            "Submit answer",
+            disabled=selected is None,
+            use_container_width=True,
+        ):
+            answers[index] = label_map[selected]
+            st.session_state["answers"] = answers
+            st.rerun()
 
-st.caption("Wildlife Ecology · Weekly assignment practice")
+st.divider()
+st.caption("Wildlife Ecology weekly assignment practice")
