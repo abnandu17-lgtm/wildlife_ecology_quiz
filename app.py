@@ -5,20 +5,12 @@ from pathlib import Path
 import streamlit as st
 
 
-# --------------------------------------------------
-# PAGE SETTINGS
-# --------------------------------------------------
-
 st.set_page_config(
     page_title="Wildlife Ecology Quiz",
     layout="centered",
     initial_sidebar_state="collapsed",
 )
 
-
-# --------------------------------------------------
-# SIMPLE DARK UI
-# --------------------------------------------------
 
 st.markdown(
     """
@@ -67,10 +59,6 @@ st.markdown(
 )
 
 
-# --------------------------------------------------
-# LOAD QUESTIONS
-# --------------------------------------------------
-
 file_path = Path(__file__).parent / "questions.json"
 
 try:
@@ -88,10 +76,6 @@ if not isinstance(all_questions, list) or not all_questions:
     st.stop()
 
 
-# --------------------------------------------------
-# SESSION STATE
-# --------------------------------------------------
-
 if "quiz_run_id" not in st.session_state:
     st.session_state.quiz_run_id = 0
 
@@ -102,17 +86,9 @@ if "option_orders" not in st.session_state:
     st.session_state.option_orders = {}
 
 
-# --------------------------------------------------
-# HEADER
-# --------------------------------------------------
-
 st.title("Wildlife Ecology Quiz")
 st.write("Practice questions and check your answers instantly.")
 
-
-# --------------------------------------------------
-# QUIZ MODE
-# --------------------------------------------------
 
 mode = st.radio(
     "Choose quiz mode",
@@ -124,10 +100,6 @@ mode = st.radio(
     horizontal=True,
 )
 
-
-# --------------------------------------------------
-# WEEK SELECTION
-# --------------------------------------------------
 
 selected_week = None
 
@@ -151,10 +123,6 @@ if mode == "Week-wise Practice":
         format_func=lambda week: f"Week {week}",
     )
 
-
-# --------------------------------------------------
-# PREPARE BASE QUESTIONS
-# --------------------------------------------------
 
 if mode == "Week-wise Practice":
 
@@ -182,10 +150,6 @@ if not base_questions:
     st.stop()
 
 
-# --------------------------------------------------
-# SHUFFLE SETTINGS FOR EVERY SECTION
-# --------------------------------------------------
-
 st.markdown("### Quiz Settings")
 
 shuffle_questions = st.checkbox(
@@ -200,10 +164,6 @@ shuffle_options = st.checkbox(
     key=f"shuffle_options_{mode}_{selected_week}",
 )
 
-
-# --------------------------------------------------
-# CREATE A QUIZ SESSION
-# --------------------------------------------------
 
 section_key = f"{mode}_{selected_week}"
 
@@ -222,7 +182,6 @@ if st.session_state.get("current_signature") != current_signature:
     st.session_state.quiz_run_id += 1
     run_id = st.session_state.quiz_run_id
 
-    # Prepare question order.
     questions = base_questions.copy()
 
     if shuffle_questions:
@@ -233,7 +192,6 @@ if st.session_state.get("current_signature") != current_signature:
         "questions": questions,
     }
 
-    # Prepare a stable option order for each question.
     option_orders = {}
 
     for index, question in enumerate(questions):
@@ -249,7 +207,6 @@ if st.session_state.get("current_signature") != current_signature:
         "options": option_orders,
     }
 
-    # Clear previous answers when settings change.
     for key in list(st.session_state.keys()):
         if key.startswith("answer_"):
             del st.session_state[key]
@@ -257,7 +214,6 @@ if st.session_state.get("current_signature") != current_signature:
     st.session_state.current_signature = current_signature
 
 
-# Use saved orders so Streamlit reruns don't reshuffle questions.
 saved_question_data = st.session_state.question_orders[section_key]
 questions = saved_question_data["questions"]
 
@@ -266,10 +222,6 @@ option_orders = saved_option_data["options"]
 
 run_id = saved_question_data["run_id"]
 
-
-# --------------------------------------------------
-# GENERATE A NEW ORDER BUTTON
-# --------------------------------------------------
 
 if st.button("Shuffle Again"):
 
@@ -281,10 +233,6 @@ if st.button("Shuffle Again"):
 
     st.rerun()
 
-
-# --------------------------------------------------
-# QUIZ INFORMATION
-# --------------------------------------------------
 
 st.markdown("---")
 st.write(f"Total questions: {len(questions)}")
@@ -299,10 +247,6 @@ st.write(
     "Feedback appears immediately. Scroll down to continue."
 )
 
-
-# --------------------------------------------------
-# DISPLAY QUESTIONS WITH INSTANT FEEDBACK
-# --------------------------------------------------
 
 for i, question in enumerate(questions):
 
@@ -366,10 +310,6 @@ for i, question in enumerate(questions):
                     f"Correct answer: {question.get('answer', 'Not available')}"
                 )
 
-
-# --------------------------------------------------
-# FINAL RESULTS
-# --------------------------------------------------
 
 st.markdown("---")
 st.subheader("Quiz Results")
@@ -446,10 +386,6 @@ st.write(f"Answered: {answered}")
 st.write(f"Incorrect: {len(incorrect_questions)}")
 st.write(f"Unanswered: {unanswered}")
 
-
-# --------------------------------------------------
-# REVIEW INCORRECT ANSWERS
-# --------------------------------------------------
 
 if incorrect_questions:
 
